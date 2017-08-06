@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+<head>
+<title>Generate a table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<h1>HTML table generator</h1>
+
+<form action="showtable.php" method="post">
+<div>
+<label for="title">Title for the page and the table:</label>
+<input type="text" name="title" id="title"/><br /><br />
+
+<label for="text">Data for your table:</label><br />
+
+<textarea name="text" rows="40" cols="100"></textarea>
+<input type="submit" name="send" value="Make table" />
+</div>
+</form>
+
+<h2>How to format your data</h2>
+
+<p>
+An input like this:
+</p>
+
+<pre>
+a
+1
+
+b
+2
+
+c
+3
+</pre>
+
+<p>
+yields an HTML table like this:
+</p>
+
+<table border="1">
+  <tr><td>a</td><td>1</td></tr>
+  <tr><td>b</td><td>2</td></tr>
+  <tr><td>c</td><td>3</td></tr>
+</table>
+    
+</body>
+</html>
